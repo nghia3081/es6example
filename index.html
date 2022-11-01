@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST ES6</title>
+</head>
+<style>
+     tr, td{
+        border:1px solid black; 
+    }
+</style>
+<body>
+    <h1>Welcome to NGHIANV high school management</h1>
+    <form>
+        <select name="class-list" id="classList" onchange="selectClass()">    </select>
+        <button type="button" onclick="addClass()">Add Class</button>
+        <input type="text" id="className" placeholder="Class Name"/>
+    </form>
+    <div class="table">
+        <table id="student-list">
+            
+
+        </table>
+    </div>
+    <div id="form" hidden="true">
+        <form id="studentForm">
+            <input type="text" name="name" placeholder="Student Name"/><br>
+            <input type="number" step="1" min="0" name="age" placeholder="Student Age"/><br>
+            <input type="radio" name="gender" placeholder="Student Gender" value="1" checked/>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" placeholder="Student Gender" value="0" />
+            <label for="gender">Fe-Male</label><br>
+            <input type="number" step="1" min="0" max="10" name="score" placeholder="Student Score"/><br>
+            <button type="button" onclick="addStudent()">Add Student</button>
+        </form>
+    </div>
+    <script src="es6.js"></script>
+</body>
+</html>
